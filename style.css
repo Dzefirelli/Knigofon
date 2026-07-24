@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+body, p, h1, h2, h3 {
+    margin: 0;
+}
+@font-face {
+    font-family: Huninn;
+    src: url(fonts/Huninn-Regular.ttf);
+}
+body {
+    background-color: var(--background_color);
+}
+:root {
+    --top_color: #f1fafd;
+    --text_color: rgb(54, 33, 33);
+    --background_color: rgb(245,245, 245);
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+}
+.header {
+    padding-bottom: 60px;
+}
+.header__inner {
+    background: linear-gradient(to right, rgb(227, 244, 250), rgb(191, 191, 247));
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px -5px rgba(0, 0, 0, 0.3);
+}
+.header__inner img {
+    scale: 70%;
+    
+}
+.header__inner__logo {
+    padding: 0;
+}
+.header__inner__h2 {
+    font-family: Huninn;
+    text-transform: uppercase;
+    font-size: 54px;
+    margin: 0 auto;
+}
+.header__main {
+    background-image: url(img/bgrpic3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 16 /9;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "top top" 
+        "left right";
+    gap: 20px;
+    padding: 20px;
+}
+h1 {
+    color: var(--text_color);
+    font-size: 72px;
+    font-family: huninn, sans-serif;
+    grid-area: top;
+    margin: 0 auto;
+    place-self: center;
+    
+}
+.header__main__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid red;
+}
+.header__main__left-p {
+    color: var(--text_color);
+    font-family: huninn, sans-serif;
+    font-size: 50px;
+}
+.header__main__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid red;
+}
+.header__main__right-p {
+    color: var(--text_color);
+    font-family: huninn, sans-serif;
+    font-size: 50px;
+}
+/*  */
+
+.quotes__header {
+    padding: 20px;
+    font-family: huninn, sans-serif;
+    font-size: 50px;
+    color: rgb(2, 155, 160);
+
+}
+.quotes__inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+.quotes__inner:last-child {
+    border: none;
+    padding-bottom: 30px;
+}
+.quotes__inner__item img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.quotes__inner__item {
+    max-width: 620px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.qoute__p {
+    margin-bottom: 20px;
+    padding-left: 5px;
+    font-family: huninn, sans-serif;
+    font-size: 25px;
+}
+/*  */
+.footer {
+    background: linear-gradient(to right, rgb(227, 244, 250), rgb(191, 191, 247));
+}
+.footer__inner {
+    padding: 20px 0;
+}
+.footer__p {
+    font-family: huninn, sans-serif;
+
+}
+
+
