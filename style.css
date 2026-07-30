@@ -16,7 +16,6 @@ body, p, h1, h2, h3 {
     font-family: Sciencegot;
     src: url(fonts/ScienceGothic-Medium.ttf);
     font-weight: normal;
-    
 }
 @font-face {
     font-family: Sciencegot;
@@ -33,6 +32,7 @@ body {
     --background_color: rgb(245,245, 245);
     --accent_green: #bdf2c6;
     --accent_violet: #a883e0;
+    --accent_violet2: #d5c0f5;
 }
 .container {
     margin: 0 auto;
@@ -61,9 +61,11 @@ body {
     padding: 0;
 }
 .header__inner__h2 {
-    font-family: CBrush;
-    text-transform: lowercase;
+    font-family: Sciencegot;
+    text-transform: uppercase;
     font-size: 72px;
+    font-weight: normal;
+    letter-spacing: 15px;
     margin: 0 auto;
 }
 .header__main {
@@ -102,7 +104,7 @@ h1 {
     align-items: center;
     width: 100%;
     height: 60px;
-    background-color: var(--accent_violet);
+    background-color: var(--accent_violet2);
     font-size: 24px;
     font-family: Sciencegot, "Helvetica Neue", Helvetica, sans-serif;
 
@@ -135,19 +137,15 @@ h1 {
     scale: 1.02;
 }
 /*  */
-
 .quotes__header {
     padding: 60px 20px 20px 20px;
     font-family: huninn, sans-serif;
     font-size: 50px;
     color: rgb(249, 252, 252);
-
 }
 .quotes__inner {
     display: flex;
     justify-content: space-between;
-
-
 }
 .quotes__inner:last-child {
     border: none;
