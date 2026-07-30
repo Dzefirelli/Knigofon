@@ -8,6 +8,21 @@ body, p, h1, h2, h3 {
     font-family: Huninn;
     src: url(fonts/Huninn-Regular.ttf);
 }
+@font-face {
+    font-family: CBrush;
+    src: url(fonts/CorrectionBrush.otf)
+}
+@font-face {
+    font-family: Sciencegot;
+    src: url(fonts/ScienceGothic-Medium.ttf);
+    font-weight: normal;
+    
+}
+@font-face {
+    font-family: Sciencegot;
+    src: url(fonts/ScienceGothic-Bold.ttf);
+    font-weight: bold;
+}
 body {
     background-image: url(img/body_background.jpg);
     background-attachment: fixed;
@@ -29,20 +44,26 @@ body {
     display: flex;
     align-items: center;
     height: 100px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px -5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    padding: 3px;
+}
+.header__inner::after {
+    content: "";
+    display: block;
+    width: 128px; 
 }
 .header__inner img {
     height: 100%;
     border-radius: 50%;
+    border: 1px dashed var(--accent_violet);
 }
 .header__inner__logo {
     padding: 0;
 }
 .header__inner__h2 {
-    font-family: Huninn;
+    font-family: CBrush;
     text-transform: lowercase;
-    font-size: 54px;
+    font-size: 72px;
     margin: 0 auto;
 }
 .header__main {
@@ -58,26 +79,35 @@ body {
 }
 h1 {
     color: var(--text_color);
-    font-size: 50px;
-    font-family: huninn, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: Sciencegot, sans-serif, sans-serif;
     grid-area: top;
     margin: 0 auto;
-    place-self: center;
-    
+    text-align: center;
+    max-width: 900px;
 }
 .header__main__left {
     display: flex;
     flex-direction: column;
     text-align: left;
     padding: 10px;
-    
-
+    justify-content: space-around;
+    gap: 10px;
 }
 .header__main__left-p {
+    display: flex;   
+    justify-content: left; 
+    padding-left: 10px;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--accent_violet);
+    font-size: 24px;
+    font-family: Sciencegot, "Helvetica Neue", Helvetica, sans-serif;
+
     color: var(--text_color);
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
-    font-size: 36px;
-    display: block;
+    border-radius: 10px;
 }
 .header__main__right {
     display: flex;
@@ -85,7 +115,6 @@ h1 {
     align-items: center;
     justify-content: space-around;
     text-align: center;
-
     gap: 10px;
     padding: 10px;
 }
@@ -96,13 +125,15 @@ h1 {
     width: 100%;
     height: 60px;
     background-color: var(--accent_green);
-    font-size: 18px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 24px;
+    font-family: Sciencegot, "Helvetica Neue", Helvetica, sans-serif;
     text-decoration: none;
     color: var(--text_color);
     border-radius: 10px;
 }
-
+.header__main__right-a:hover {
+    scale: 1.02;
+}
 /*  */
 
 .quotes__header {
@@ -115,6 +146,7 @@ h1 {
 .quotes__inner {
     display: flex;
     justify-content: space-between;
+
 
 }
 .quotes__inner:last-child {
@@ -144,6 +176,7 @@ h1 {
 .footer__inner {
     padding: 20px;
     background: linear-gradient(to right,var(--accent_green), var(--accent_violet));
+    
 }
 .footer__p {
     font-family: huninn, sans-serif;
