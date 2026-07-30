@@ -9,47 +9,44 @@ body, p, h1, h2, h3 {
     src: url(fonts/Huninn-Regular.ttf);
 }
 body {
-    background-color: var(--background_color);
+    background-image: url(img/body_background.jpg);
+    background-attachment: fixed;
 }
 :root {
-    --top_color: #f1fafd;
+    --white_color: #f1fafd;
     --text_color: rgb(54, 33, 33);
     --background_color: rgb(245,245, 245);
+    --accent_green: #bdf2c6;
+    --accent_violet: #a883e0;
 }
 .container {
     margin: 0 auto;
     width: 100%;
     max-width: 1300px;
 }
-.header {
-    padding-bottom: 60px;
-}
 .header__inner {
-    background: linear-gradient(to right, rgb(227, 244, 250), rgb(191, 191, 247));
+    background: linear-gradient(to right, var(--accent_green), var(--accent_violet));
     display: flex;
     align-items: center;
-    padding: 0px;
+    height: 100px;
     margin-bottom: 10px;
     box-shadow: 0 4px 8px -5px rgba(0, 0, 0, 0.3);
 }
 .header__inner img {
-    scale: 70%;
-    
+    height: 100%;
+    border-radius: 50%;
 }
 .header__inner__logo {
     padding: 0;
 }
 .header__inner__h2 {
     font-family: Huninn;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-size: 54px;
     margin: 0 auto;
 }
 .header__main {
-    background-image: url(img/bgrpic3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    aspect-ratio: 16 /9;
+    background-color: var(--white_color);
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr;
@@ -61,7 +58,7 @@ body {
 }
 h1 {
     color: var(--text_color);
-    font-size: 72px;
+    font-size: 50px;
     font-family: huninn, sans-serif;
     grid-area: top;
     margin: 0 auto;
@@ -70,35 +67,49 @@ h1 {
 }
 .header__main__left {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 2px solid red;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    
+
 }
 .header__main__left-p {
     color: var(--text_color);
-    font-family: huninn, sans-serif;
-    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 36px;
+    display: block;
 }
 .header__main__right {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-    border: 2px solid red;
+
+    gap: 10px;
+    padding: 10px;
 }
-.header__main__right-p {
+.header__main__right-a {
+    display: flex;   
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--accent_green);
+    font-size: 18px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-decoration: none;
     color: var(--text_color);
-    font-family: huninn, sans-serif;
-    font-size: 50px;
+    border-radius: 10px;
 }
+
 /*  */
 
 .quotes__header {
-    padding: 20px;
+    padding: 60px 20px 20px 20px;
     font-family: huninn, sans-serif;
     font-size: 50px;
-    color: rgb(2, 155, 160);
+    color: rgb(249, 252, 252);
 
 }
 .quotes__inner {
@@ -120,6 +131,7 @@ h1 {
     max-width: 620px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
+    background-color: var(--white_color);
 }
 .qoute__p {
     margin-bottom: 20px;
@@ -128,11 +140,10 @@ h1 {
     font-size: 25px;
 }
 /*  */
-.footer {
-    background: linear-gradient(to right, rgb(227, 244, 250), rgb(191, 191, 247));
-}
+
 .footer__inner {
-    padding: 20px 0;
+    padding: 20px;
+    background: linear-gradient(to right,var(--accent_green), var(--accent_violet));
 }
 .footer__p {
     font-family: huninn, sans-serif;
