@@ -43,8 +43,8 @@ body {
     background: linear-gradient(to right, var(--accent_green), var(--accent_violet));
     display: flex;
     align-items: center;
-    height: 100px;
-    margin-bottom: 30px;
+    height: 130px;
+    margin-bottom: 60px;
     padding: 3px;
 }
 .header__inner::after {
@@ -63,7 +63,7 @@ body {
 .header__inner__h2 {
     font-family: Sciencegot;
     text-transform: uppercase;
-    font-size: 72px;
+    font-size: 80px;
     font-weight: normal;
     letter-spacing: 15px;
     margin: 0 auto;
@@ -149,7 +149,7 @@ h1 {
 }
 .quotes__inner:last-child {
     border: none;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 .quotes__inner__item img {
     display: block;
@@ -178,7 +178,6 @@ h1 {
 }
 .footer__p {
     font-family: huninn, sans-serif;
-
 }
 
 
