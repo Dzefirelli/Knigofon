@@ -25,6 +25,8 @@ body, p, h1, h2, h3 {
 body {
     background-image: url(img/body_background.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+
 }
 :root {
     --white_color: #f1fafd;
@@ -158,10 +160,16 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .quotes__inner__item {
+    display: flex;
+    flex-direction: column;
     max-width: 620px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     background-color: var(--white_color);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: huninn, sans-serif;
+    font-size: 20px;
 }
 .qoute__p {
     margin-bottom: 20px;
@@ -170,14 +178,44 @@ h1 {
     font-size: 25px;
 }
 /*  */
-
 .footer__inner {
     padding: 20px;
     background: linear-gradient(to right,var(--accent_green), var(--accent_violet));
-    
 }
 .footer__p {
     font-family: huninn, sans-serif;
+}
+/*  */
+.opened__book {
+}
+.opened__book__inner {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.opened__book__inner h2 {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 68px;
+    align-self: center;
+}
+.opened__book__page {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    height: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: var(--white_color);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: huninn, sans-serif;
+    font-size: 20px;
+
 }
 
 
