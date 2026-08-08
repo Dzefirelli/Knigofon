@@ -98,8 +98,11 @@
     max-width: 99%;
 }
     .header__main__left-p {
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 5px;
+    flex-direction: column;
+
+    justify-content: space-around;
 }
     .header__main__right-a {
     padding-left: 5px;
