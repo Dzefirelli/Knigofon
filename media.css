@@ -41,7 +41,6 @@
     width: 90%;
     font-size: 20px;
 }
-
 }
 
 /* ДЛЯ ЭКРАНОВ 768px И МЕНЬШЕ */
@@ -110,7 +109,6 @@
     .quotes__header {
     font-size: 36px;
     }
-}
     .quotes__inner__item img {
     width: 100%;
 }
@@ -119,4 +117,4 @@
     width: 100%;
     font-size: 20px;
 }
-   
+}   
