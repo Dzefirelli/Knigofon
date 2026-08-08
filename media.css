@@ -1,0 +1,124 @@
+/* ДЛЯ ЭКРАНОВ 992px И МЕНЬШЕ */
+@media screen and (max-width: 992px) {
+    .header__inner {
+    height: 80px;
+    margin-bottom: 40px;
+}
+    .header__inner::after {
+    width: 74px; 
+}
+    .header__inner__h2 {
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 15px;
+    margin: 0 auto;
+}
+    .header__main {
+    gap: 10px;
+    padding: 10px;
+}
+    h1 {
+    font-size: 40px;
+    max-width: 90%
+}
+    .header__main__left-p {
+    font-size: 18px;
+}
+    .header__main__right-a {
+    font-size: 18px;
+}
+    .quotes__header {
+    padding: 40px 20px 20px 20px;
+    font-size: 50px;
+    text-align: center;
+}
+    .quotes__inner {
+    flex-direction: column;
+    align-items: center;
+}
+    .quotes__inner__item {
+    margin-bottom: 10px;
+    width: 90%;
+    font-size: 20px;
+}
+
+}
+
+/* ДЛЯ ЭКРАНОВ 768px И МЕНЬШЕ */
+@media screen and (max-width: 768px) {
+    .header__inner {
+    margin-bottom: 30px;
+}
+    .header__inner::after {
+    width: 54px; 
+}
+    .header__main {
+    display: flex;
+    flex-direction: column;
+}
+    h1 {
+    font-size: 30px;
+    max-width: 95%
+}
+    .header__main__left-p {
+    font-size: 24px;
+}
+    .header__main__right-a {
+    flex-direction: column;
+    padding-left: 10px;
+    font-size: 20px;
+    align-items: flex-start
+}
+    .quotes__header {
+    padding-top: 30px;
+}
+    .quotes__inner__item img {
+    width: 100%;
+}
+    .quotes__inner__item {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+    .footer {
+    margin-top: 30px;
+    }
+}
+/* ДЛЯ ЭКРАНОВ 576px И МЕНЬШЕ */
+@media screen and (max-width: 576px) {
+    .header__inner {
+    margin-bottom: 25px;
+}
+    .header__inner__h2 {
+    font-size: 30px;
+    letter-spacing: normal;
+    margin: 0 auto;
+}
+    h1 {
+    font-size: 25px;
+    max-width: 99%;
+}
+    .header__main__left-p {
+    font-size: 20px;
+    padding-left: 5px;
+}
+    .header__main__right-a {
+
+    padding-left: 5px;
+    font-size: 16px;
+    align-items: flex-start;
+}
+    .quotes__header {
+    padding-top: 30px;
+    font-size: 40px;
+}
+    .quotes__inner__item img {
+    width: 100%;
+}
+    .quotes__inner__item {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+   
+}

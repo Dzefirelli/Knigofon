@@ -26,7 +26,6 @@ body {
     background-image: url(img/body_background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-
 }
 :root {
     --white_color: #f1fafd;
@@ -41,6 +40,7 @@ body {
     width: 100%;
     max-width: 1300px;
 }
+/* Верхяя часть хеадера */
 .header__inner {
     background: linear-gradient(to right, var(--accent_green), var(--accent_violet));
     display: flex;
@@ -70,6 +70,7 @@ body {
     letter-spacing: 15px;
     margin: 0 auto;
 }
+/* Нижняя часть хеадера с барами */
 .header__main {
     background-color: var(--white_color);
     display: grid;
@@ -109,7 +110,6 @@ h1 {
     background-color: var(--accent_violet2);
     font-size: 24px;
     font-family: Sciencegot, "Helvetica Neue", Helvetica, sans-serif;
-
     color: var(--text_color);
     border-radius: 10px;
 }
@@ -138,21 +138,21 @@ h1 {
 .header__main__right-a:hover {
     scale: 1.02;
 }
-/*  */
+/* Блок с вырезками из книг */
 .quotes__header {
     padding: 60px 20px 20px 20px;
     font-family: huninn, sans-serif;
     font-size: 50px;
     color: rgb(249, 252, 252);
+    text-align: center;
 }
 .quotes__inner {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    
 }
-.quotes__inner:last-child {
-    border: none;
-    padding-bottom: 60px;
-}
+
 .quotes__inner__item img {
     display: block;
     margin: 0 auto;
@@ -162,14 +162,15 @@ h1 {
 .quotes__inner__item {
     display: flex;
     flex-direction: column;
-    max-width: 620px;
+    max-width: 800px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 40px 20px 20px 20px;
     background-color: var(--white_color);
     white-space: pre-wrap;
     word-wrap: break-word;
     font-family: huninn, sans-serif;
     font-size: 20px;
+    margin: 0 auto;
 }
 .qoute__p {
     margin-bottom: 20px;
@@ -177,7 +178,10 @@ h1 {
     font-family: huninn, sans-serif;
     font-size: 25px;
 }
-/*  */
+/* Футер */
+.footer {
+    margin-top: 40px;
+}
 .footer__inner {
     padding: 20px;
     background: linear-gradient(to right,var(--accent_green), var(--accent_violet));
@@ -186,36 +190,11 @@ h1 {
     font-family: huninn, sans-serif;
 }
 /*  */
-.opened__book {
-}
 .opened__book__inner {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
 
-}
-.opened__book__inner h2 {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    font-size: 68px;
-    align-self: center;
-}
-.opened__book__page {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 800px;
-    height: 1000px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    background-color: var(--white_color);
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    font-family: huninn, sans-serif;
-    font-size: 20px;
-
-}
 
 
